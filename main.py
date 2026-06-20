@@ -20,9 +20,9 @@ API_BASE_URL = 'https://bio.ffutils.tech/api/update_bio'
 OWNER_USERNAME = '' # add your telegram username here. example: '@itzpaglu'
 REQUIRED_CHANNEL = '' # add your required channel username here. example: '@paglu_dev'. if you dont have any channel then leave it blank.
 
-if not BOT_TOKEN:
-    logger.error("BOT_TOKEN environment variable not set!")
-    sys.exit(1)
+# if not BOT_TOKEN:
+#     logger.error("BOT_TOKEN environment variable not set!")
+#     sys.exit(1)
 
 bot = telebot.TeleBot(BOT_TOKEN, parse_mode=None)
 app = Flask(__name__)
